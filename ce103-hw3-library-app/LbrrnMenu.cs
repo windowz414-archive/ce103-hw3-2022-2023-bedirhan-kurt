@@ -1,4 +1,13 @@
-﻿using System;
+/*
+ * Copyright (C) 2022 Bushra "Bedirhan" KURT. All Rights Reserved.
+ * 
+ * SPDX-License-Identifier: GPL-2.0-only
+ * 
+ * Reference-Link: https://www.youtube.com/watch?v=qAWhGEPMlS8
+ * 
+ */
+
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;

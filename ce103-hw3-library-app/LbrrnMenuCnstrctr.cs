@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (C) 2022 Bushra "Bedirhan" KURT. All Rights Reserved.
  * 
  * SPDX-License-Identifier: GPL-2.0-only
