@@ -8,11 +8,6 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using static System.Console;
 
 namespace ce103_hw3
