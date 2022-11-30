@@ -41,6 +41,10 @@ namespace ce103_hw3
                 Lbrrn lbrrn = new Lbrrn();
                 lbrrn.LbrrnLogin();
             }
+            else
+            {
+                throw new IndexOutOfRangeException();
+            }
         }
 
         private void LbrrnBookCategories()
