@@ -123,6 +123,6 @@ namespace ce103_hw3
 
             return inputs;
         }
-        #endregion
     }
+    #endregion
 }
