@@ -65,7 +65,7 @@ namespace ce103_hw3
                 Clear();
                 CRT();
 
-                ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+                ConsoleKeyInfo keyInfo = ReadKey(true);
                 consoleKey = keyInfo.Key;
                 if (consoleKey == ConsoleKey.UpArrow)
                 {
