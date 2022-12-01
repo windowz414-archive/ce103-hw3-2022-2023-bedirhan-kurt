@@ -1,9 +1,15 @@
-﻿using System;
+﻿/* 
+ * Copyright (C) 2022 Bushra KURT. All Rights Reserved.
+ * 
+ * SPDX-License-Identifier: GPL-2.0-only
+ * 
+ * Reference: https://github.com/ucoruh/ce103-hw3-2022-helper/tree/main/library-manager-dll
+ *
+ */
+
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ce103_hw3_lib
 {

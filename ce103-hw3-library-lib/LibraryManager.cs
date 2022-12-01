@@ -1,10 +1,11 @@
-﻿using System;
+﻿/* 
+ * Copyright (C) 2022 Bushra KURT. All Rights Reserved.
+ * 
+ * SPDX-License-Identifier: GPL-2.0-only
+ * 
+ */
+
 using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ce103_hw3_lib
 {
