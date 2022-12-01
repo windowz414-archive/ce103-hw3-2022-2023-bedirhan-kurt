@@ -30,7 +30,7 @@ This application is password-protected. If you don't have a password, please con
 
 Passwords are coded inside through the source code and cannot be changed unless it's changed in source code before compiling.
 
-If you want to exit the app instead, simply hit Ctrl+C.");
+If you want to exit the app instead, simply hit Ctrl+C or ESC.");
 
             #region Feat. OpenAI ChatGPT (Free Research Preview)
             // Create a string builder to store the password

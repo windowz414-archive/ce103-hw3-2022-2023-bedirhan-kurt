@@ -125,4 +125,38 @@ namespace ce103_hw3
         }
     }
     #endregion
+
+    public class LbrrnLister
+    {
+        public void LbrrnLst(string listType, string[] stringArray)
+        {
+            Clear();
+
+            Console.WriteLine($"List of {listType}:");
+            
+            #region Feat. OpenAI ChatGPT Free Research Preview
+            foreach (string member in stringArray)
+            {
+                Console.WriteLine(member);
+            }
+            #endregion
+
+            Console.WriteLine("\nTip: Press ESC key whenever you want to go a menu up!");
+
+            #region Feat. OpenAI ChatGPT Free Research Preview
+            while (true)
+            {
+                // Read the user's input.
+                ConsoleKeyInfo keyInfo = Console.ReadKey();
+
+                // Check if the user has pressed the Esc key.
+                if (keyInfo.Key == ConsoleKey.Escape)
+                {
+                    // If the user has pressed the Esc key, exit the loop.
+                    break;
+                }
+            }
+            #endregion
+        }
+    }
 }
