@@ -12,7 +12,7 @@ using static System.Console;
 
 namespace ce103_hw3
 {
-    internal class LbrrnMenuCnstrctr
+    public class LbrrnMenuCnstrctr
     {
         // First things first, variables.
         private int pointedIndex;
@@ -86,5 +86,43 @@ namespace ce103_hw3
             } while (consoleKey != ConsoleKey.Enter);
             return pointedIndex;
         }
+    }
+
+    #region Feat. OpenAI ChatGPT Free Research Preview
+    public class LbrrnInputReader
+    {
+        public string[] ReadInputs(int maxInputs, string prompt)
+        {
+            Clear();
+            string[] inputs = new string[maxInputs];
+            int inputIndex = 0;
+
+            while (true)
+            {
+                Console.Write(prompt);
+
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+
+                    if (key.Key == ConsoleKey.Escape)
+                    {
+                        break;
+                    }
+                }
+
+                string input = Console.ReadLine();
+                inputs[inputIndex] = input;
+                inputIndex++;
+
+                if (inputIndex == maxInputs)
+                {
+                    break;
+                }
+            }
+
+            return inputs;
+        }
+        #endregion
     }
 }

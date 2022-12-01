@@ -12,7 +12,7 @@ using static System.Console;
 
 namespace ce103_hw3
 {
-    internal class LbrrnMain
+    public class LbrrnMain
     {
         public void LbrrnMenu()
         {
@@ -60,8 +60,9 @@ namespace ce103_hw3
             int pointedIndex = lbrrnBookCtgry.Choose();
             if (pointedIndex == 0)
             {
-                // TODO: Code an add menu with text edit functionalities and assign its variables here.
-                throw new NotImplementedException();
+                LbrrnInputReader lbrrnNewBookCtgry = new LbrrnInputReader();
+                string[] inputs = lbrrnNewBookCtgry.ReadInputs(1, "Enter the name of the category you want: ");
+                LbrrnBookCategories();
             }
             else if (pointedIndex == 1)
             {
