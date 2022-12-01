@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ce103-hw3-library-app", "ce103-hw3-library-app\ce103-hw3-library-app.csproj", "{1E25D601-90AC-4036-8AA9-E47C53D15563}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ce103-hw3-library-lib", "ce103-hw3-library-lib\ce103-hw3-library-lib.csproj", "{ABBD0F55-0178-4AEE-ADB0-A097ADFBF753}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1E25D601-90AC-4036-8AA9-E47C53D15563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E25D601-90AC-4036-8AA9-E47C53D15563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E25D601-90AC-4036-8AA9-E47C53D15563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABBD0F55-0178-4AEE-ADB0-A097ADFBF753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBD0F55-0178-4AEE-ADB0-A097ADFBF753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBD0F55-0178-4AEE-ADB0-A097ADFBF753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBD0F55-0178-4AEE-ADB0-A097ADFBF753}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
