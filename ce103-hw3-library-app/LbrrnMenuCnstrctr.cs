@@ -131,19 +131,44 @@ namespace ce103_hw3
         public void LbrrnLst(string listType, string[] stringArray)
         {
             Clear();
-
-            Console.WriteLine($"List of {listType}:");
-            
-            #region Feat. OpenAI ChatGPT Free Research Preview
-            foreach (string member in stringArray)
+            if (stringArray == null)
             {
-                Console.WriteLine(member);
+                Console.WriteLine($"{listType} is empty.\n");
             }
-            #endregion
+            else
+            {
 
+                #region Feat. OpenAI ChatGPT Free Research Preview
+                // Set the console foreground color to green
+                Console.ForegroundColor = ConsoleColor.Green;
+                
+                // Set the console font style to bold
+                Console.Write("\x1B[1m");
+                
+                // Write the heading
+                Console.WriteLine($"List of {listType}:");
+                
+                // Reset the console font style to its default value
+                Console.Write("\x1B[0m");
+                
+                // Reset color for the list
+                ResetColor();
+
+                foreach (string member in stringArray)
+                {
+                    Console.WriteLine(member);
+                }
+            }
+
+            // Set the console font style to italic
+            Console.Write("\x1B[3m");
+
+            // Write the footer
             Console.WriteLine("\nTip: Press ESC key whenever you want to go a menu up!");
 
-            #region Feat. OpenAI ChatGPT Free Research Preview
+            // Reset the console font style to its default value
+            Console.Write("\x1B[0m");
+
             while (true)
             {
                 // Read the user's input.
