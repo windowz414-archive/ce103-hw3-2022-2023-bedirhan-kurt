@@ -61,17 +61,31 @@ namespace ce103_hw3
             if (pointedIndex == 0)
             {
                 LbrrnInputReader lbrrnNewBookCtgry = new LbrrnInputReader();
-                string[] inputs = lbrrnNewBookCtgry.ReadInputs(1, "Enter the name of the category you want: ");
+                string[] lbrrnNewBookCtgryPrompt = { "Enter the name of the category you want: " };
+                string[] inputs = lbrrnNewBookCtgry.ReadInputs(1, lbrrnNewBookCtgryPrompt);
+                // We didn't implement a file writer just yet.
+                throw new NotImplementedException();
                 LbrrnBookCategories();
             }
             else if (pointedIndex == 1)
             {
-                // TODO: Code an edit menu with selection and edit functionalities and assign its variables here.
+                string ctgryEditPromptIcon = "?";
+                string ctgryEditPrompt = "Select a category to edit:";
+                string[] ctgryEditOptions = { "Action and Adventure", "Classics", "Comic Book or Graphic Novel", "Detective and Mystery", "Fantasy", "Historical Fiction", "Horror", "Literary Fiction" };
+                LbrrnMenuCnstrctr lbrrnBookCtgryToEdit = new LbrrnMenuCnstrctr(ctgryEditPromptIcon, ctgryEditPrompt, ctgryEditOptions);
+                string[] lbrrnBookCtgryNewNamePrompt = { $"[{lbrrnBookCtgryToEdit}] Enter the new name of the category: " };
+                LbrrnInputReader lbrrnBookCtgryNewNameFunc = new LbrrnInputReader();
+                string[] lbrrnBookCtgryNewName = lbrrnBookCtgryNewNameFunc.ReadInputs(1, lbrrnBookCtgryNewNamePrompt);
+                // This is a prototype. We didn't actually implement a function for editing yet.
                 throw new NotImplementedException();
             }
             else if (pointedIndex == 2)
             {
-                // TODO: Code a selection menu with categories and the options to delete, choose something else or return from there and assign its variables here.
+                string ctgryDelPromptIcon = "!";
+                string ctgryDelPrompt = "Select a category to delete:";
+                string[] ctgryDelOptions = { "Action and Adventure", "Classics", "Comic Book or Graphic Novel", "Detective and Mystery", "Fantasy", "Historical Fiction", "Horror", "Literary Fiction" };
+                LbrrnMenuCnstrctr lbrrnBookCtgryDel = new LbrrnMenuCnstrctr(ctgryDelPromptIcon, ctgryDelPrompt, ctgryDelOptions);
+                // This is a prototype. We didn't actually implement a function for deletion yet.
                 throw new NotImplementedException();
             }
             else if (pointedIndex == 3)

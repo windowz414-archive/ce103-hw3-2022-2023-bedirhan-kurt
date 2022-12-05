@@ -91,15 +91,16 @@ namespace ce103_hw3
     #region Feat. OpenAI ChatGPT Free Research Preview
     public class LbrrnInputReader
     {
-        public string[] ReadInputs(int maxInputs, string prompt)
+        public string[] ReadInputs(int maxInputs, string[] prompts)
         {
             Clear();
             string[] inputs = new string[maxInputs];
             int inputIndex = 0;
+            int promptIndex = 0;
 
             while (true)
             {
-                Console.Write(prompt);
+                Console.Write(prompts[promptIndex]);
 
                 if (Console.KeyAvailable)
                 {
@@ -119,10 +120,18 @@ namespace ce103_hw3
                 {
                     break;
                 }
+
+                promptIndex++;
+
+                if (promptIndex == prompts.Length)
+                {
+                    promptIndex = 0;
+                }
             }
 
             return inputs;
         }
+
     }
     #endregion
 
