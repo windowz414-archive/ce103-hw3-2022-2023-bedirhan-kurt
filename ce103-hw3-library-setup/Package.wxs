@@ -1,0 +1,9 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="ce103_hw3_library_setup" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="0b1aa728-f9ba-4c4b-9880-ccd53ec45094">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ExampleComponents" />
+    </Feature>
+  </Package>
+</Wix>
